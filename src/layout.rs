@@ -35,19 +35,19 @@ const LED_NAS: Action = LedNextAnimationSpeed;
 const BT_ON: Action = LayerOn(LAYER_BT);
 
 pub const BASE: Layout = layout![
-    Escape   N1     N2   N3 N4 N5    N6 N7 N8    N9  N0     Minus    Equal     BSpace
-    Tab      Q      W    E  R  T     Y  U  I     O   P      LBracket RBracket  BSlash
-    Capslock A      S    D  F  G     H  J  K     L   SColon Quote    No        Enter
-    LShift   Z      X    C  V  B     N  M  Comma Dot Slash  No       No        RShift
-    LCtrl    LMeta  LAlt No No Space No No No    No  RAlt   FN_M     FN2_M     RCtrl
+    Escape   N1    N2    N3    N4        N5      N6     N7     N8    N9         N0     Minus    Equal     BSpace
+    Tab      Q     W     E     R         T       Y      U      I     O          P      LBracket RBracket  BSlash
+    LCtrl    A     S     D     F         G       H      J      K     L          SColon Quote    No        Enter
+    LShift   Z     X     C     V         B       N      M      Comma Dot        Up     No       No        RShift
+    LCtrl    LAlt  LMeta No    No        Space   No     No     No    No         Left   Down     Right     FN_M
 ];
 
 pub const FN: Layout = layout![
-  Grave F1   F2   F3    F4        F5      F6     F7     F8   F9         F10    F11    F12 __
-  __    __   Up   __    LedToggle LED_NAS LED_NB LED_NT Up   Scrolllock Pause  Home   End PScreen
-  __    Left Down Right __        __      __     Left   Down Right      PgUp   PgDown No  __
-  __    __   __   __    __        BT_ON   __     __     __   Insert     Delete No     No  __
-  __    __   __   No    No        Reset   No     No     No   No         __     __     __  __
+    Grave    F1    F2    F3    F4        F5      F6     F7     F8    F9         F10    F11      F12       __
+    __       __    Up    __    LedToggle LED_NAS LED_NB LED_NT Up    Scrolllock Pause  Home     End       PScreen
+    Capslock Left  Down  Right __        __      __     Left   Down  Right      PgUp   PgDown   No        __
+    __       __    __    __    __        BT_ON   __     __     __    Insert     Slash  No       No        __
+    __       __    __    No    No        Reset   No     No     No    No         __     __       __        __
 ];
 
 pub const FN2: Layout = layout![
